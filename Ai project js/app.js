@@ -7,6 +7,7 @@ var button6=document.getElementById("button6");
 var button7=document.getElementById("button7");
 var button8=document.getElementById("button8");
 var butotn9=document.getElementById("button9");
+var imgs=["0.jpg","1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg",8];
 var numbers=[1,2,3,4,5,6,7,8,9];
 // var nums=[];
 function Button(theactualbutton,left,right,top,bottom){
@@ -45,20 +46,20 @@ function shuffle(array) {
   
     return array;
   }
-  var nums=shuffle(numbers);
+  var nums=shuffle(imgs);
   for (let i = 0; i< nums.length; i++) {
-  if (nums[i]===9){
+  if (nums[i]===8){
     nums[i]="";
   }
-  button_1.theactualbutton.innerText=nums[0];
-button_2.theactualbutton.innerText=nums[1];
-button_3.theactualbutton.innerText=nums[2];
-button_4.theactualbutton.innerText=nums[3];
-button_5.theactualbutton.innerText=nums[4];
-button_6.theactualbutton.innerText=nums[5];
-button_7.theactualbutton.innerText=nums[6];
-button_8.theactualbutton.innerText=nums[7];
-button_9.theactualbutton.innerText=nums[8];
+button_1.theactualbutton.setAttribute('src')=nums[0];
+button_2.theactualbutton.setAttribute('src')=nums[1];
+button_3.theactualbutton.setAttribute('src')=nums[2];
+button_4.theactualbutton.setAttribute('src')=nums[3];
+button_5.theactualbutton.setAttribute('src')=nums[4];
+button_6.theactualbutton.setAttribute('src')=nums[5];
+button_7.theactualbutton.setAttribute('src')=nums[6];
+button_8.theactualbutton.setAttribute('src')=nums[7];
+button_9.theactualbutton.setAttribute('src')=nums[8];
 
 function swap(a,b){
    var y= document.getElementById(a).innerHTML;
