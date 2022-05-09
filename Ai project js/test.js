@@ -25,6 +25,7 @@ function goal(){
 
                   ){
       return alert('you won');
+      
     }
     else{
     return console.log('not yet');
